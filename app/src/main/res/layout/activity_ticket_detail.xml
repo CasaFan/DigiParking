@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="35dp">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:text="@string/creation_ticket_stationnement"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/ticket_detail_adressStation"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="20sp"/>
+
+        <ImageButton
+            android:id="@+id/ticket_detail_button_location"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"
+            android:contentDescription="@string/localisation"
+            app:srcCompat="@android:drawable/ic_menu_mylocation" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="45dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:text="@string/coutTotal"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/ticket_detail_tarifZone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="45dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:text="@string/periode"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/ticket_detail_heureDebut"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="3dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/ticket_detail_heureFin"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="45dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:text="@string/temps_reste"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/ticket_detail_temps_reste"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="80sp"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="45dp"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/ticket_detail_button_terminer"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="33dp"
+            android:layout_marginStart="33dp"
+            android:background="@color/colorMain"
+            android:text="@string/terminer"
+            android:textColor="@color/colorGreyWhite"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:gravity="center"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/ticket_detail_button_prolonger"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginRight="33dp"
+            android:layout_marginEnd="33dp"
+            android:background="@color/colorMain"
+            android:text="@string/prolonger"
+            android:textColor="@color/colorGreyWhite"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ticket_detail_owner"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginStart="75dp"
+        />
+</LinearLayout>

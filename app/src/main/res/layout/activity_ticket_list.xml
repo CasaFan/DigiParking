@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    tools:context="com.digiparking.android.digiparking.TicketListActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+        </android.support.design.widget.AppBarLayout>
+        <include layout="@layout/content_ticket_list"/>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fab_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGreyWhite">
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/fab_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            fab:fab_addButtonColorNormal="@color/colorAccent"
+            fab:fab_addButtonColorPressed="@color/colorAccentLight"
+            fab:fab_addButtonPlusIconColor="@color/colorWhite"
+            fab:fab_addButtonStrokeVisible="false"
+            fab:fab_labelStyle="@style/menu_labels_style"
+            fab:fab_labelsPosition="left">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_prendreTicket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/colorAccent"
+                fab:fab_colorPressed="@color/colorAccentLight"
+                fab:fab_plusIconColor="@color/colorWhite"
+                fab:fab_icon="@drawable/ic_ticket"
+                fab:fab_size="mini"
+                fab:fab_title="Prendre un ticket" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_user_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/colorAccent"
+                fab:fab_colorPressed="@color/colorAccentLight"
+                fab:fab_plusIconColor="@color/colorWhite"
+                fab:fab_icon="@drawable/ic_user_profile"
+                fab:fab_size="mini"
+                fab:fab_title="Profile" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_gestion_voiture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/colorAccent"
+                fab:fab_colorPressed="@color/colorAccentLight"
+                fab:fab_plusIconColor="@color/colorWhite"
+                fab:fab_icon="@drawable/ic_gestion_voiture"
+                fab:fab_size="mini"
+                fab:fab_title="Gerer mes voitures" />
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

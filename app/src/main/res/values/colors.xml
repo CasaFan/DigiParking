@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#23BEBE</color>
+    <color name="colorPrimaryDark">#20acac</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccentLight">#FF82ab</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorMain">#23bebe</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGreyWhite">#F3F3F3</color>
+    <color name="colorGreyBlack">#666666</color>
+    <color name="secondary_text">#727272</color>
+    <color name="appBackGround">#FAFAFA</color>
+</resources>

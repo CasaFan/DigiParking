@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="55dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:text="@string/creation_ticket_duree"
+            android:textSize="20sp"/>
+
+        <Spinner
+            android:id="@+id/creation_ticket_spinnerHeure"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="60dp"
+            android:entries="@array/spinnerHeures" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:text="@string/creation_ticket_stationnement"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/creation_ticket_spinner_stationnement"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="60dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="55dp"
+        android:weightSum="1"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:text="@string/creation_ticket_voiture"
+            android:textSize="20sp"/>
+
+        <Spinner
+            android:id="@+id/creation_ticket_spinner_voiture"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="60dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/creation_ticket_image_voiture"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/voiture_image"/>
+
+    <Button
+        android:id="@+id/creation_ticket_button_OK"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorMain"
+        android:text="@string/creation_ticket_OK"
+        android:textColor="@color/colorGreyWhite"
+        android:textSize="20sp"
+        android:textAllCaps="false"/>
+
+
+</LinearLayout>

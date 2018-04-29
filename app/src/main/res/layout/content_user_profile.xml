@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.digiparking.android.digiparking.UserProfileActivity"
+    tools:showIn="@layout/activity_user_profile">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_profile_photo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="40dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/colorGreyWhite"
+        app:civ_fill_color="@color/colorPrimaryDark"
+        android:src="@drawable/ic_user_profile"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginStart="55dp"
+            android:text="@string/inscription_form_nom"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/user_profile_nom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="200dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginStart="55dp"
+            android:text="@string/inscription_form_prenom"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/user_profile_prenom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:maxLines="1"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginStart="55dp"
+            android:text="@string/inscription_form_tel"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/user_profile_tel"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:maxLines="1"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginStart="55dp"
+            android:text="@string/inscription_form_mail"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/user_profile_mail"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/user_profile_btn_valider"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:background="@color/colorMain"
+        android:text="@string/valider"
+        android:textColor="@color/colorGreyWhite"
+        android:textSize="20sp"
+        android:textAllCaps="false"/>
+</LinearLayout>

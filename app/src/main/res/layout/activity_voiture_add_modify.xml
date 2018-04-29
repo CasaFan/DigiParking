@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.digiparking.android.digiparking.VoitureAddOrModifiyActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_qr_scan"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/voiture_add_modif_image"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_voiture_img"
+            android:background="@color/colorGreyWhite"
+            android:contentDescription="@string/voiture_image" />
+
+        <ImageView
+            android:id="@+id/circleImageView"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="top|end"
+            android:contentDescription="@string/voiture_image"
+            android:background="@drawable/ic_add_photo" />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:gravity="center_vertical"
+            android:text="@string/voiture_marque"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/voiture_add_modif_marque"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:inputType="text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:text="@string/voiture_modele"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/voiture_add_modif_modele"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:inputType="text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="155dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:text="@string/voiture_immatriculation"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/voiture_add_modif_immatriculation"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:inputType="textCapCharacters"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/voiture_add_modif_btn_OK"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorMain"
+        android:text="@string/voiture_modifier"
+        android:textColor="@color/colorGreyWhite"
+        android:textSize="20sp"
+        android:textAllCaps="false"/>
+</LinearLayout>

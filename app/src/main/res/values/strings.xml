@@ -1,0 +1,105 @@
+<resources>
+    <!--activity labels-->
+    <string name="app_name">DigiParking</string>
+    <string name="app_inscription">Inscription</string>
+    <string name="app_creation_ticket">Prendre un ticket</string>
+    <string name="app_ticket_detail">Detail</string>
+    <string name="title_activity_ticket_list">Mes Tickets</string>
+
+    <!-- Strings related to login-->
+    <string name="logo">Digiparking</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="inscription_hypertext"> <u> Inscrivez-moi! </u></string>
+    <string name="action_sign_in">SIGN IN</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="preference_file_key">com.digiparking.adnroid.digiparking</string>
+
+    <!--inscription_form-->
+    <string name="inscription_form_nom">Nom</string>
+    <string name="inscription_form_prenom">Prénom</string>
+    <string name="inscription_form_tel">Téléphone</string>
+    <string name="inscription_form_mail">Mail</string>
+    <string name="inscription_form_mdp">Mot de passe</string>
+    <string name="inscription_form_btn">Je m\'inscris</string>
+
+    <!--creation_ticket_form-->
+    <string name="creation_ticket_duree">Durée</string>
+    <string name="creation_ticket_heure">H</string>
+    <string name="creation_ticket_minute">M</string>
+    <string name="creation_ticket_stationnement">Station</string>
+    <string name="creation_ticket_voiture">Voiture</string>
+    <string name="creation_ticket_OK">OK</string>
+    <string name="localisation">Voiture Location</string>
+    <string name="voiture_image">image de voiture</string>
+
+    <string name="spinnerStation_prompt_duree">Select une durée</string>
+    <string name="spinnerStation_prompt_station">Select une station</string>
+    <string name="spinnerStation_prompt_voiture">Select une voiture</string>
+    <string-array name="spinnerHeures">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>45 minutes</item>
+        <item>1 heure</item>
+        <item>3 heures</item>
+        <item>24 heures</item>
+    </string-array>
+
+    <string-array name="test">
+        <item>test</item>
+        <item>test</item>
+        <item>test</item>
+        <item>test</item>
+    </string-array>
+
+    <!--ticket_detail-->
+    <string name="tarif_zone">Tarif</string>
+    <string name="periode">Période</string>
+    <string name="temps_reste">Temps restant :</string>
+    <string name="terminer">Terminer</string>
+    <string name="prolonger">Prolonger</string>
+    <string name="title_activity_menu">MenuActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_fa">faActivity</string>
+
+    <!-- notification service -->
+
+    <string name="timeleft">%1$02d:%2$02d:%3$02d</string>
+    <string name="ticketName">Ticket %1$d</string>
+    <string name="ticketDate">Date</string>
+    <string name="ticketClos">Ticket clos</string>
+    <string name="backBtn">Back</string>
+    <string name="OK">OK</string>
+    <string name="title_activity_voiture_list">Mes voitures</string>
+    <string name="voitureNotFound">Aucune voiture trouvée</string>
+    <string name="title_activity_voiture_detail">VoitureDetail</string>
+    <string name="voiture_marque">Marque</string>
+    <string name="voiture_modele">Modèle</string>
+    <string name="voiture_immatriculation">Immatriculation</string>
+    <string name="action_delete">Supprimer</string>
+    <string name="voiture_modifier">Modifier</string>
+    <string name="voiture_add">Ajouter</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="valider">Valider</string>
+    <string name="TicketOwner">Ticket à %s</string>
+    <string name="title_activity_user_profile">Profile</string>
+    <string name="userPhoto">User photo</string>
+    <string name="inscription_form_password">Mot de passe</string>
+    <string name="action_qr_scan">Scan QR code</string>
+    <string name="ticketNotFound">Aucun Ticket Ttrouvé</string>
+    <string name="search_title">Recherche</string>
+    <string name="action_show_qrcode">Visualiser QR code</string>
+    <string name="coutTotal">Coût Total</string>
+
+</resources>

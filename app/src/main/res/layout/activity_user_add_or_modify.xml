@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.digiparking.android.digiparking.UserProfileAddOrModifyActivity">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_profile_add_modify_photo"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="40dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorGreyWhite"
+            app:civ_fill_color="@color/colorPrimaryDark"
+            android:src="@drawable/ic_user_profile"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="top|end"
+            android:contentDescription="@string/voiture_image"
+            android:background="@drawable/ic_add_photo" />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginStart="55dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/inscription_form_nom"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/user_profile_add_modify_nom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="180dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:inputType="text"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginStart="55dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/inscription_form_prenom"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/user_profile_add_modify_prenom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:maxLines="1"
+            android:textSize="20sp"
+            android:inputType="text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginStart="55dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/inscription_form_tel"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/user_profile_add_modify_tel"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:maxLines="1"
+            android:textSize="20sp"
+            android:inputType="phone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginStart="55dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/inscription_form_mail"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/user_profile_add_modify_mail"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:maxLines="1"
+            android:textSize="20sp"
+            android:inputType="textEmailAddress"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user_profile_add_modif_psdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginStart="55dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/inscription_form_password"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/user_profile_add_modify_password"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:maxLines="1"
+            android:textSize="20sp"
+            android:inputType="textPassword"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/user_profile_add_modif_btn_OK"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorMain"
+        android:text="@string/voiture_modifier"
+        android:textColor="@color/colorGreyWhite"
+        android:textSize="20sp"
+        android:textAllCaps="false"/>
+</LinearLayout>
